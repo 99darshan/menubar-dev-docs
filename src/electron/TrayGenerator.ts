@@ -11,7 +11,7 @@ class TrayGenerator {
   }
 
   private createTray = () => {
-    this.tray = new Tray(this.createNativeImage())
+    this.tray = new Tray(this.createNativeImage());
     this.tray.setIgnoreDoubleClickEvents(true);
     this.tray.on('click', this.toggleWindow);
   }
